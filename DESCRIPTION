@@ -19,5 +19,5 @@ Remotes:
 Depends: 
     R (>= 4.1),
     mvwizr
-
-
+URL: https://github.com/awel-gewaesserschutzlabor/mvwizrAWEL
+BugReports: https://github.com/awel-gewaesserschutzlabor/mvwizrAWEL/issues
