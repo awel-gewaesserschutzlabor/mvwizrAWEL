@@ -1,0 +1,23 @@
+Package: mvwizrAWEL
+Title: AWEL spezifische Erweiterungen zur Datenprozessierung fuer mvwizr
+Version: 1.0.0
+Authors@R: 
+    person("Michelle", "Salvisberg", , "michelle.salvisberg@bd.zh.ch", role = "cre")
+Description: Dieses Package enthaelt AWEL spezifische Erweiterungen zur Datenprozessierung fuer mvwizr.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    dplyr,
+    lubridate,
+    purrr,
+    readr,
+    rlang
+Remotes:
+    ror-at-ebp/mvwizr
+Depends: 
+    R (>= 4.1),
+    mvwizr
+
+
