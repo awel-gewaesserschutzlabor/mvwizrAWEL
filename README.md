@@ -6,8 +6,8 @@ Bei den Zusatzfunktionen handelt es sich in erster Linie um eine Datenaufbereitu
 ## Installation und Updates
 mvwizrAWEL wird direkt von github installiert und benötigt mindestens R 4.1. Für die Installation auf einem lokalen Rechner müssen folgende Kommandos ausgefürt werden: 
 ```r
-install.packages("pak") # falls noch nicht installiert
-pak::pkg_install("awel-gewaesserschutzlabor/mvwizrAWEL")
+install.packages("remotes") # falls noch nicht installiert
+remotes::install_github("awel-gewaesserschutzlabor/mvwizrAWEL", build = TRUE, build_vignettes = TRUE, dependencies = TRUE)
 ```
 Bei der Installation von mvwizrAWEL wird mvwizr automatisch mitinstalliert und geladen. Bei jedem Laden von mvwizrAWEL wird das zugrundeliegende Paket mvwizr automatisch auf github auf Updates kontrolliert und bei Bedarf neu installiert, d.h. mvwizr sollte automatisch immer auf dem neusten Stand sein.
 Dadurch wird auch garantiert, dass die hinterlegten Daten des VSA, BAFU und Oekotoxzentrums immer auf dem neusten Stand sind. Um mvwizrAWEL zu aktualisieren, kann der gleiche Befehl wie bei der Installation verwendet werden. 
