@@ -9,8 +9,10 @@ mvwizrAWEL wird direkt von github installiert und benötigt mindestens R 4.1. F�
 install.packages("remotes") # falls noch nicht installiert
 remotes::install_github("awel-gewaesserschutzlabor/mvwizrAWEL", build = TRUE, build_vignettes = TRUE, dependencies = TRUE)
 ```
-Bei der Installation von mvwizrAWEL wird mvwizr automatisch mitinstalliert und geladen. Bei jedem Laden von mvwizrAWEL wird das zugrundeliegende Paket mvwizr automatisch auf github auf Updates kontrolliert und bei Bedarf neu installiert, d.h. mvwizr sollte automatisch immer auf dem neusten Stand sein.
-Dadurch wird auch garantiert, dass die hinterlegten Daten des VSA, BAFU und Oekotoxzentrums immer auf dem neusten Stand sind. Um mvwizrAWEL zu aktualisieren, kann der gleiche Befehl wie bei der Installation verwendet werden. 
+Bei der Installation von mvwizrAWEL wird mvwizr automatisch mitinstalliert und geladen. Bei jedem Laden von mvwizrAWEL wird das zugrundeliegende Paket mvwizr automatisch auf github auf Updates kontrolliert und eine Warnung ausgegeben, sollte eine neuere Version als die aktuell Installierte verfügbar sein. Dadurch wird auch garantiert, dass die hinterlegten Daten des VSA, BAFU und Oekotoxzentrums immer auf dem neusten Stand sind. Mvwizr kann wie folgt aktualisiert werden: 
+```r
+remotes::install_github("ror-at-ebp/mvwizr", build = TRUE, build_vignettes = TRUE, dependencies = TRUE)
+```
 
 ## Verwendung
 Nach der Installation kann mvwizrAWEL bzw. mvwizr in Scripts oder in der Konsole verwendet werden, indem das Paket geladen wird:
